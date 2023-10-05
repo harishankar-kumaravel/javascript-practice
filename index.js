@@ -33,6 +33,7 @@ b=c;
 console.log(a);
 console.log(b); 
 
+
 // if - else 
 
 let hour = 25;
@@ -53,9 +54,66 @@ else {
     console.log('dont make a joke')
 }
 
+let divElement = document.getElementById("container");
+let container = "";
+for (let i= 0; i<=10; i++){
+    container += "<p>number"+ i+"</p>";
+
+}
+
+divElement.innerHTML = container;
 
 
+var divElement = document.getElementById("container");
+
+for (var i = 1; i <= 5; i++) {
+    
+    var newElement = document.createElement("p");
+    newElement.textContent = "Number " + i;
+
+    divElement.appendChild(newElement);
+}
 
 
+let number = max(1,2)
+console.log( number);
 
-  
+function max(a,b) {
+    return (a>b) ? a:b;
+}
+
+// let Hey = resolution (500,700)
+//   console.log(Hey);
+
+// function resolution(width, height) {
+//     return (width>height)
+    
+// }
+
+
+let Hey = resolution (800,700)
+console.log(Hey);
+
+function resolution(width, height) {
+  if (width>height){
+      return 'landscape';
+  } else {
+      return 'portrait';
+    }
+}
+
+const person = {
+    name: "Harishankar",
+    age: 21
+    
+};
+
+for (const key in person) {
+    console.log(key + ":",person[key])
+}
+
+
+for (const details of person){
+    console.log(details);
+}
+
