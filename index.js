@@ -117,3 +117,35 @@ for (const details of person){
     console.log(details);
 }
 
+const output = fizzBuzz (5);
+console.log ( output);
+
+function fizzBuzz(input){
+    if (typeof input !=='number')
+    return 'Not a Number';
+    if (input % 3 == 0)
+     return 'Fizz';
+    if (input % 5 == 0)
+      return'Buzz';
+    if ((input % 3 == 0) && i(input % 5== 0)) 
+     return'fizzBuzz';
+    }
+
+
+    checkspeed(180);
+
+function checkspeed(speed) {
+    const speedlimit = 70
+    const kmperpoint = 5
+    if (speed <= speedlimit ) {
+      console.log('ok, Keep it')
+        
+    } else {
+        const point = Math.floor((speed-speedlimit)/ kmperpoint);
+        if(point>= 12)
+         console.log('license suspended');
+        else
+         console.log ('points', point);  
+        
+    }
+}
